@@ -48,14 +48,14 @@ nav{
 a {
     color: black;
     text-decoration: none;
-    text-decoration-color:rgb(20, 20, 190);
+    text-decoration-color:rgb(163, 163, 163);
 }
 
 a:hover {
-    color:rgb(20, 20, 190);
+    color:rgb(163, 163, 163);
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(20, 20, 190);
+    text-decoration-color: rgb(163, 163, 163);
 }
 
 .logo {
@@ -149,15 +149,19 @@ a:hover {
 /* SECTIONS */
 
 section {
+    gap: 4rem;
     padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
+    height: 80%;
+    margin: 3rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
   
 .section-container {
     display: flex;
+    align-items: flex-start; 
+    gap: 2rem;
+    margin-bottom: 3rem;
 }
 
 /* PROFILE SECTION */
@@ -171,6 +175,13 @@ section {
 
 .section__pic-container {
     display: flex;
+    height: 400px;
+    width: 300px;
+    margin: auto 0;
+}
+
+.section__pic-container_about {
+    display: block;
     height: 400px;
     width: 300px;
     margin: auto 0;
@@ -269,12 +280,13 @@ section {
   
 .about-containers {
     gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
   
 .about-details-container {
-    justify-content: center;
+    justify-content: flex-start;
+    flex: 1;
     flex-direction: row;
 }
   
@@ -284,7 +296,9 @@ section {
 }
   
 .about-pic {
-    border-radius: 2rem;
+    border-radius: 1rem;
+    width: 300px; 
+    height: auto;
 }
   
 .arrow {
@@ -294,17 +308,18 @@ section {
 }
   
 .details-container {
-    padding: 1.5rem;
+    padding: 2rem;
     flex: 1;
     background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    text-align: center;
+    text-align: left;
+    margin-bottom: 1rem;
 }
   
 .section-container {
-    gap: 4rem;
+    gap: 3rem;
     height: 80%;
 }
   
@@ -318,6 +333,7 @@ section {
 
 #projects {
     position: relative;
+    padding-top: 3rem;
 }
   
 .color-container {
